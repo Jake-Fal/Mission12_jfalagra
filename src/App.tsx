@@ -323,6 +323,7 @@ const teams = [
   {"tid": 212, "cid": 19, "did": 39, "school": "Tulane", "name": "Green Wave", "abbrev": "TUL", "pop": 108, "city": "New Orleans", "state": "NO", "latitude": 29.935 , "longitude": -90.122},		
   {"tid": 287, "cid": 19, "did": 39, "school": "Houston Baptist", "name": "Huskies", "abbrev": "HBU", "pop": 33, "city": "Greater Sharpstown", "state": "TX", "latitude": 29.694 , "longitude": -95.515}  
 ]
+//The team class creates a basic card template
 class Team extends React.Component < {school: string, name:string, city:string, state:string}>{
   render(){
     const oneTeam = this.props;
@@ -335,6 +336,7 @@ class Team extends React.Component < {school: string, name:string, city:string, 
     )
   }
 }
+//The Teamlist fills out a card template for each team
 function TeamList(){
   return(
     <div>
@@ -342,6 +344,8 @@ function TeamList(){
     </div>
   )
 }
+
+//The app function uses the team list and some HTML
 function App() {
   return (
     <div className="App">
